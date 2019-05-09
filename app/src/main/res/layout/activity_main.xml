@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.qinruan.webviewt1.MainActivity"
+    >
+    <!-- 获取标题  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text=""
+        />
+    <!-- 开始加载 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_beginLoading"
+        android:layout_below="@+id/title"
+        android:text=""
+        />
+    <!--  获取加载进度-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_beginLoading"
+        android:id="@+id/text_loading"
+        android:text=""
+        />
+    <!-- 结束加载-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_loading"
+        android:id="@+id/text_endLoading"
+        android:text=""
+        />
+    <!-- 显示网页区域-->
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView1"
+        android:layout_below="@+id/text_endLoading"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>
